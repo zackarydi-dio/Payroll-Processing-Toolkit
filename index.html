@@ -4,9 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payroll Processing Toolkit</title>
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            margin: 24px;
+            line-height: 1.6;
+            color: #111;
+            background: #f7f8fb;
+        }
+
+        h1 {
+            margin-bottom: 0.25rem;
+        }
+
+        p {
+            max-width: 700px;
+            margin-top: 0;
+            color: #333;
+        }
+
+        .payroll-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 18px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+            background: #fff;
+        }
+
+        .payroll-table th,
+        .payroll-table td {
+            border: 1px solid #d8d8dc;
+            padding: 10px 14px;
+            text-align: left;
+        }
+
+        .payroll-table th {
+            background: #f1f3f8;
+            font-weight: 600;
+        }
+
+        .payroll-table tbody tr:nth-child(even) {
+            background: #fafbfd;
+        }
+    </style>
 </head>
 <body>
-    <h1>Payroll Processing Report</h1>
+    <h1>Payroll Processing Toolkit</h1>
+    <p>This demonstration computes payroll totals for hourly employees and displays the results with overtime and tax deductions.</p>
+    <section id="payroll-report"></section>
     <script src="cc_5.js"></script>
 </body>
 </html>

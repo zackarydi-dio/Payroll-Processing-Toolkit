@@ -1,51 +1,54 @@
 # Payroll Processing Toolkit
 
-A lightweight JavaScript project that automates common payroll calculations for hourly employees. This solution computes base pay, overtime pay, gross pay, tax deductions, and net pay using a clear and maintainable function-based implementation.
+A polished JavaScript payroll calculator that computes hourly pay, overtime, tax deductions, and final net pay for a small set of employees. This project is designed to be clean, maintainable, and presentation-ready for interview review.
 
-## Overview
+## Project Summary
 
-This repository demonstrates a payroll processing workflow for a small set of employees. It includes:
+This repository demonstrates a payroll workflow for hourly employees. The application:
 
-- Hourly pay calculations for standard and overtime hours
-- Overtime pay at 1.5x the normal hourly rate for hours beyond 40
-- Simple tax deduction modeling at a fixed 15% rate
-- Aggregated gross pay and net pay output for each employee
+- calculates standard base pay for up to 40 hours
+- computes overtime pay at 1.5x for hours beyond 40
+- applies a flat tax deduction of 15%
+- renders a clean payroll summary table in the browser
+- prints a concise payroll summary to the console
 
-## Features
+## Technologies Used
 
-- Modular payroll functions in `cc_5.js`
-- Example employee data with variable hours and rates
-- Browser-ready demonstration via `index.html`
-- Console output for payroll reports
+- HTML
+- JavaScript
+- browser DOM API
 
-## Usage
+## How to Run
 
-### Open in a browser
+### In a browser
 
-1. Open `index.html` in a web browser.
-2. View the payroll output in the browser console.
+1. Open `index.html` in your browser.
+2. The payroll summary table is generated automatically.
 
-### Run with Node.js
+### With Node.js
 
-If Node.js is installed, run:
+1. Install Node.js if needed.
+2. Run:
 
 ```bash
 node cc_5.js
 ```
 
-The script prints payroll details for each employee to the terminal.
+3. Review the payroll output in the terminal.
+
+## What I Learned
+
+- how to structure JavaScript code into reusable functions
+- how to separate calculation logic from presentation
+- how to render dynamic data into the browser DOM
+- how to clean up code and documentation for a portfolio-ready repo
 
 ## File Structure
 
-- `cc_5.js` — core payroll calculation logic and sample employee data
-- `index.html` — simple page that loads the script for browser execution
-- `README.md` — project documentation
+- `cc_5.js` — payroll logic, formatting, and report rendering
+- `index.html` — browser interface and script loader
+- `README.md` — project overview, usage, and notes
 
 ## Notes
 
-- The tax deduction is modeled as a flat 15% of gross pay for demonstration purposes.
-- This project is intended as a learning exercise in JavaScript function design and payroll computation.
-
-## License
-
-No license specified.
+This project uses a simplified tax model for demonstration purposes. The code is intentionally modular and ready for enhancements such as employee input forms, configurable tax rates, or payroll export features.
